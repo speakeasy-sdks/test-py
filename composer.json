@@ -1,0 +1,19 @@
+{
+  "name": "next-test/a",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "next_test\\a\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "jms/serializer": "^3.22"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.9",
+    "phpunit/phpunit": "^10"
+  }
+}

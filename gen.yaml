@@ -1,4 +1,9 @@
 configVersion: 1.0.0
+management:
+  docChecksum: 21c25ca8a734b4fb704e98d966524ee0
+  docVersion: 1.0.0
+  speakeasyVersion: 1.99.2
+  generationVersion: 2.155.1
 generation:
   comments:
     disableComments: false
@@ -7,8 +12,12 @@ generation:
   sdkClassName: a
   singleTagPerOp: false
   tagNamespacingDisabled: false
+features:
+  php:
+    core: 2.88.2
+    globalServerURLs: 2.82.0
 php:
-  version: 0.0.1
+  version: 0.1.0
   maxMethodParams: 0
   namespace: next_test\a
   packageName: next-test/a
