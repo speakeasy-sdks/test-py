@@ -105,7 +105,7 @@ $sdk = A::builder()
 
 try {
     $request = new ShowPetByIdRequest();
-    $request->petId = 'South bandwidth male';
+    $request->petId = 'string';
 
     $response = $sdk->pets->showPetById($request);
 
