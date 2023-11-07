@@ -42,9 +42,9 @@ composer update
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use next_test\a\A;
+use next_test\a;
 
-$sdk = A::builder()->build();
+$sdk = a\A::builder()->build();
 
 try {
     $response = $sdk->pets->createPets();
@@ -63,7 +63,7 @@ try {
 ## Available Resources and Operations
 
 
-### [pets](docs/sdks/pets/README.md)
+### [Pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets

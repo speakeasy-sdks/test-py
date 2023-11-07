@@ -1,5 +1,5 @@
 # Pets
-(*pets*)
+
 
 ### Available Operations
 
@@ -19,9 +19,9 @@ Create a pet
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \next_test\a\A;
+use \next_test\a;
 
-$sdk = A::builder()
+$sdk = a\A::builder()
     ->build();
 
 try {
@@ -53,14 +53,14 @@ List all pets
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \next_test\a\A;
-use \next_test\a\Models\Operations\ListPetsRequest;
+use \next_test\a;
+use \next_test\a\Models\Operations;
 
-$sdk = A::builder()
+$sdk = a\A::builder()
     ->build();
 
 try {
-    $request = new ListPetsRequest();
+    $request = new Operations\ListPetsRequest();
     $request->limit = 21453;
 
     $response = $sdk->pets->listPets($request);
@@ -97,14 +97,14 @@ Info for a specific pet
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \next_test\a\A;
-use \next_test\a\Models\Operations\ShowPetByIdRequest;
+use \next_test\a;
+use \next_test\a\Models\Operations;
 
-$sdk = A::builder()
+$sdk = a\A::builder()
     ->build();
 
 try {
-    $request = new ShowPetByIdRequest();
+    $request = new Operations\ShowPetByIdRequest();
     $request->petId = 'string';
 
     $response = $sdk->pets->showPetById($request);

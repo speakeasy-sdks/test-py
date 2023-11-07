@@ -2,23 +2,26 @@ configVersion: 1.0.0
 management:
   docChecksum: 21c25ca8a734b4fb704e98d966524ee0
   docVersion: 1.0.0
-  speakeasyVersion: 1.104.0
-  generationVersion: 2.169.0
+  speakeasyVersion: 1.114.1
+  generationVersion: 2.181.1
 generation:
-  comments:
-    disableComments: false
-    omitDescriptionIfSummaryPresent: false
-  baseServerURL: ""
-  repoURL: https://github.com/speakeasy-sdks/test-py.git
+  comments: {}
   sdkClassName: a
-  singleTagPerOp: false
-  tagNamespacingDisabled: false
+  repoURL: https://github.com/speakeasy-sdks/test-py.git
 features:
   php:
-    core: 2.89.0
+    core: 3.1.0
     globalServerURLs: 2.82.0
 php:
-  version: 0.2.0
+  version: 0.3.0
+  imports:
+    option: openapi
+    paths:
+      callbacks: Models/Callbacks
+      errors: Models/Errors
+      operations: Models/Operations
+      shared: Models/Shared
+      webhooks: Models/Webhooks
   installationURL: https://github.com/speakeasy-sdks/test-py
   maxMethodParams: 0
   namespace: next_test\a

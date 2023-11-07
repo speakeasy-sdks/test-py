@@ -7,9 +7,9 @@
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use next_test\a\A;
+use next_test\a;
 
-$sdk = A::builder()->build();
+$sdk = a\A::builder()->build();
 
 try {
     $response = $sdk->pets->createPets();
