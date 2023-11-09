@@ -2,18 +2,18 @@ configVersion: 1.0.0
 management:
   docChecksum: 21c25ca8a734b4fb704e98d966524ee0
   docVersion: 1.0.0
-  speakeasyVersion: 1.114.1
-  generationVersion: 2.181.1
+  speakeasyVersion: 1.116.0
+  generationVersion: 2.185.0
 generation:
   comments: {}
   sdkClassName: a
   repoURL: https://github.com/speakeasy-sdks/test-py.git
 features:
   php:
-    core: 3.1.0
+    core: 3.1.1
     globalServerURLs: 2.82.0
 php:
-  version: 0.3.0
+  version: 0.3.1
   imports:
     option: openapi
     paths:
@@ -22,8 +22,10 @@ php:
       operations: Models/Operations
       shared: Models/Shared
       webhooks: Models/Webhooks
+  inputModelSuffix: input
   installationURL: https://github.com/speakeasy-sdks/test-py
   maxMethodParams: 0
   namespace: next_test\a
+  outputModelSuffix: output
   packageName: next-test/a
   repoSubDirectory: .
