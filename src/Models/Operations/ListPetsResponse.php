@@ -30,10 +30,10 @@ class ListPetsResponse
     /**
      * $headers
      * 
-     * @var ?array<string, array<string>> $headers
+     * @var array<string, array<string>> $headers
      */
 	
-    public ?array $headers = null;
+    public array $headers;
     
     /**
      * A paged array of pets
@@ -57,13 +57,13 @@ class ListPetsResponse
      * @var ?\Psr\Http\Message\ResponseInterface $rawResponse
      */
 	
-    public ?\Psr\Http\Message\ResponseInterface $rawResponse = null;
+    public ?\Psr\Http\Message\ResponseInterface $rawResponse;
     
 	public function __construct()
 	{
 		$this->contentType = "";
 		$this->error = null;
-		$this->headers = null;
+		$this->headers = [];
 		$this->pets = null;
 		$this->statusCode = 0;
 		$this->rawResponse = null;

@@ -2,18 +2,20 @@ configVersion: 1.0.0
 management:
   docChecksum: 21c25ca8a734b4fb704e98d966524ee0
   docVersion: 1.0.0
-  speakeasyVersion: 1.116.0
-  generationVersion: 2.185.0
+  speakeasyVersion: 1.120.3
+  generationVersion: 2.192.1
 generation:
   comments: {}
   sdkClassName: a
   repoURL: https://github.com/speakeasy-sdks/test-py.git
+  usageSnippets:
+    optionalPropertyRendering: withExample
 features:
   php:
-    core: 3.1.1
+    core: 3.1.2
     globalServerURLs: 2.82.0
 php:
-  version: 0.3.1
+  version: 0.3.2
   imports:
     option: openapi
     paths:
