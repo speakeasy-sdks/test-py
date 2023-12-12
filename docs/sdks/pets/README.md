@@ -21,8 +21,7 @@ require_once 'vendor/autoload.php';
 
 use \next_test\a;
 
-$sdk = a\A::builder()
-    ->build();
+$sdk = a\A::builder()->build();
 
 try {
     $response = $sdk->pets->createPets();
@@ -56,12 +55,11 @@ require_once 'vendor/autoload.php';
 use \next_test\a;
 use \next_test\a\Models\Operations;
 
-$sdk = a\A::builder()
-    ->build();
+$sdk = a\A::builder()->build();
 
 try {
-    $request = new Operations\ListPetsRequest();
-    $request->limit = 21453;
+        $request = new Operations\ListPetsRequest();
+    $request->limit = 21453;;
 
     $response = $sdk->pets->listPets($request);
 
@@ -100,12 +98,11 @@ require_once 'vendor/autoload.php';
 use \next_test\a;
 use \next_test\a\Models\Operations;
 
-$sdk = a\A::builder()
-    ->build();
+$sdk = a\A::builder()->build();
 
 try {
-    $request = new Operations\ShowPetByIdRequest();
-    $request->petId = 'string';
+        $request = new Operations\ShowPetByIdRequest();
+    $request->petId = 'string';;
 
     $response = $sdk->pets->showPetById($request);
 
