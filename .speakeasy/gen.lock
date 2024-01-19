@@ -4,7 +4,7 @@ management:
   docChecksum: 21c25ca8a734b4fb704e98d966524ee0
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
+  generationVersion: 2.237.2
   releaseVersion: 0.4.0
   configChecksum: 07b2ec5d84193b86e26b547aa0269e39
   repoURL: https://github.com/speakeasy-sdks/test-py.git
