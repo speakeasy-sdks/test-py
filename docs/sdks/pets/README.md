@@ -102,7 +102,7 @@ $sdk = a\A::builder()->build();
 
 try {
         $request = new Operations\ShowPetByIdRequest();
-    $request->petId = 'string';;
+    $request->petId = '<value>';;
 
     $response = $sdk->pets->showPetById($request);
 
