@@ -16,11 +16,9 @@ namespace next_test\a;
  */
 class ABuilder
 {
-    private SDKConfiguration $sdkConfig;
-
-    public function __construct() {
-        $this->sdkConfig = new SDKConfiguration();
-    }
+    public function __construct(
+        private SDKConfiguration $sdkConfig = new SDKConfiguration(),
+    ) {}
 
     /**
      * setClient allows setting a custom Guzzle client for the SDK to make requests with.
@@ -31,6 +29,7 @@ class ABuilder
     public function setClient(\GuzzleHttp\ClientInterface $client): ABuilder
     {
         $this->sdkConfig->defaultClient = $client;
+
         return $this;
     }
     
@@ -44,6 +43,7 @@ class ABuilder
     public function setServerUrl(string $serverUrl, ?array $params = null): ABuilder
     {
         $this->sdkConfig->serverUrl = Utils\Utils::templateUrl($serverUrl, $params);
+
         return $this;
     }
     
@@ -56,6 +56,7 @@ class ABuilder
     public function setServerIndex(int $serverIdx): ABuilder
     {
         $this->sdkConfig->serverIndex = $serverIdx;
+
         return $this;
     }
     

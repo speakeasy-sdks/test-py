@@ -17,7 +17,8 @@ Create a pet
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \next_test\a;
 
@@ -50,7 +51,8 @@ List all pets
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \next_test\a;
 use \next_test\a\Models\Operations;
@@ -93,7 +95,8 @@ Info for a specific pet
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \next_test\a;
 use \next_test\a\Models\Operations;
